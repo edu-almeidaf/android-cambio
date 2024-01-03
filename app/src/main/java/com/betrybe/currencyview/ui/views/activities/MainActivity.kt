@@ -40,12 +40,12 @@ class MainActivity : AppCompatActivity() {
             try {
                 ApiIdlingResource.increment()
 
-                startLoading()
+//                startLoading()
 
                 val data = getSymbols().symbols.keys.toList()
                 setAutoComplete(data)
 
-                stopLoading()
+//                stopLoading()
             } catch (error: HttpException) {
                 Log.d("Error", "$error")
             } catch (error: IOException) {
